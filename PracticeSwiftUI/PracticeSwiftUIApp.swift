@@ -1,10 +1,3 @@
-//
-//  PracticeSwiftUIApp.swift
-//  PracticeSwiftUI
-//
-//  Created by 拓実 on 2024/11/28.
-//
-
 import SwiftUI
 
 @main
