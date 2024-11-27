@@ -21,7 +21,7 @@ struct DetailView: View {
         }
       }
       .padding()
-      
+
     }
     .safeAreaInset(edge: .top) {
       if #unavailable(iOS 18) {
@@ -50,7 +50,7 @@ struct DetailView: View {
       }
     }
   }
-  
+
   @ViewBuilder
   func CustomHeaderView() -> some View {
     VStack(spacing: 6) {
@@ -70,9 +70,9 @@ struct DetailView: View {
         }
       }
       .frame(width: 50, height: 50)
-      
+
       Button {
-        
+
       } label: {
         HStack(spacing: 2) {
           Text(profile.userName)

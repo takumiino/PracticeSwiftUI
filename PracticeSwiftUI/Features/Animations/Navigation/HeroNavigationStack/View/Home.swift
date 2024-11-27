@@ -15,7 +15,7 @@ struct Home: View {
             config.activeID = profile.id
             /// This is used for navigationDestination
             selectedProfile = profile
-            
+
           }
         }
       }
@@ -29,7 +29,7 @@ struct Home: View {
       ZStack {
         if let image = config.layer {
           let destination = config.coordinates.1
-          
+
           Image(image)
             .resizable()
             .aspectRatio(contentMode: .fill)
@@ -48,13 +48,13 @@ struct Home: View {
       .onChange(of: selectedProfile == nil) { oldValue, newValue in
         if newValue {
           config.isExpandedCompletely = false
-          
+
           withAnimation(.easeInOut(duration: 0.3), completionCriteria:.logicallyComplete) {
             config.layer = nil
           } completion: {
             config.layer = nil
           }
-          
+
         }
       }
     }
@@ -97,7 +97,7 @@ extension View {
         .navigationBarBackButtonHidden()
     }
   }
-  
+
   @ViewBuilder
   func manageHomeForOlderiOSVersion() -> some View{
     if #available(iOS 18, *) {

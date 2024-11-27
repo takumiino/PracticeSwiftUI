@@ -22,20 +22,20 @@ struct ProfileCardView: View {
           } action: { newValue in
             viewRect = newValue
           }
-        
-        
+
+
         VStack(alignment: .leading, spacing: 4) {
           Text(profile.userName)
             .font(.callout)
             .foregroundStyle(.primary)
-          
+
           Text(profile.lastMsg)
             .font(.caption2)
             .foregroundStyle(.gray)
         }
-        
+
         Spacer(minLength: 0)
-        
+
         Image(systemName: "chevron.right")
           .font(.caption2)
           .foregroundStyle(.gray)
