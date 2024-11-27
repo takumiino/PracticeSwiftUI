@@ -6,6 +6,12 @@
 <h2>IndicatorAnimation</h2>
 <video width="33%" src= "https://github.com/user-attachments/assets/438689b3-35a1-44dd-ac60-9d5ef8d2d1a1"></video>
 
+<h2>ImageEffect for Blur</h2>
+<video width="33%" src= "https://github.com/user-attachments/assets/256b7e4e-c9ce-4432-957e-96ec35750fbe"></video>
+
+
+
+
 
 
 
