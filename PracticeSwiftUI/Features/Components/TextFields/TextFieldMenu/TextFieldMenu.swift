@@ -32,7 +32,7 @@ struct TextFieldMenu: View {
 
               TextFieldAction(title: "置き換え") { _, textField in
                 if let selectionRange = textField.selectedTextRange {
-                  let replacementText = "ヤッホー"
+                  let replacementText = "what's up takumi"
 
                   textField.replace(selectionRange, withText: replacementText)
 
@@ -47,7 +47,7 @@ struct TextFieldMenu: View {
 
         Section {
           if let selection, !selection.isInsertion {
-            Text("Some Text is Selected")
+            Text("Selected Text: \(message)")
           }
         }
       }
